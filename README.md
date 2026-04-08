@@ -1,33 +1,40 @@
 # Shark-Tank-India-SQL-Analysis
 Comprehensive Data Analysis of Shark Tank India (Season 1) using SQL Server. This project explores startup trends, funding success rates, entrepreneur demographics, and shark-specific investment patterns through complex queries, joins, and window functions."
 
-📊 Project Overview: STAR Method
-📍 Situation
-Goal: Analyze the startup landscape of Shark Tank India (Season 1).
+🦈 Shark Tank India Analytics Project
+Comprehensive Data Analysis using SQL Server
 
-Data: Information from 30 episodes, including 98 unique brand pitches.
+📝 Executive Summary
+This project analyzes startup trends, funding success rates, and investor behavior from Season 1 of Shark Tank India. By transforming raw pitch data into a structured SQL database, I uncovered key insights into the Indian startup ecosystem.
+
+🛠️ The STAR Breakdown
+📍 Situation
+Context: Analyzed data from 30 episodes and 98 unique brand pitches.
+
+Goal: Identify high-performing sectors and investor patterns.
 
 🎯 Task (The Problem)
-Raw pitch data is messy and hard to compare.
+The Challenge: Raw data was fragmented and categorical.
 
-Problem: We didn't know which sectors were actually profitable, how diverse the founders were, or which "Sharks" were the most active investors without manual, error-prone calculations.
+Pain Point: Manual analysis in Excel was slow and prone to errors when trying to calculate multi-shark involvement or sector-specific rankings.
 
-🛠️ Action (The Solution)
-I built a structured SQL database to automate the analysis using the following techniques:
+⚙️ Action (The Solution)
+I engineered a series of SQL scripts to automate insight generation:
 
-Data Cleaning: Imported Excel data into SQL Server and handled null values.
+Core Aggregates: Used SUM and CASE to track funding conversion and gender diversity.
 
-Demographics: Calculated Gender Ratios and Age Group distributions using SUM, CASE, and GROUP BY.
+Complex Joins: Built a "Shark Leaderboard" by joining multiple subqueries to track investment totals and equity percentages for each Shark.
 
-The "Shark Matrix": Used complex Joins and Subqueries to build a leaderboard for sharks like Ashneer, Namita, and Aman.
-
-Advanced Logic: Applied Window Functions (RANK() OVER PARTITION) to identify the "top deal" in every industry (Food, Tech, etc.).
+Advanced Analytics: Implemented Window Functions (RANK() OVER PARTITION) to isolate the top-funded startups within every industry.
 
 🏆 Result (The Outcome)
-Funding Success: Discovered a 58% conversion rate across all pitches.
+Success Rate: Identified a 58% conversion rate for all pitches.
 
-Diversity: Identified that 29 startups with female founders successfully secured deals.
+Diversity: Validated that 29 startups with female founders secured funding.
 
-Efficiency: Created a reusable script that can analyze any new Shark Tank season in seconds rather than hours.
+Scalability: Built a reusable SQL framework that can process new data in seconds.
 
-Public Access: Hosted the full code on my GitHub and showcased it on my Portfolio.
+🚀 Links
+GitHub: PatlaveetiJabeer786
+
+Live Portfolio: jabeer.lovable.app
